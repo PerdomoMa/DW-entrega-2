@@ -23,6 +23,13 @@ h1{
     border-bottom: 1px solid #CE6315;
 }
 
+.boton:hover{
+    background-color:#393636;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
 
 
 /*HEADER*/
@@ -129,31 +136,26 @@ span {
 /*NOSOTROS*/
 
 #yo{
-    height: 600px;
     background-color: #838175;
 }
 
-#yo img{
-    width: 30%;
-    height: 400px;
-    object-fit: cover;
-    float: left;
-    padding-left: 200px;
-    padding-top: 100px;
-}
 
-#yo article{
-    color: #393636;
+#yo p{
     font-family: Allerta;
     font-style: normal;
     font-weight: normal;
-    padding-top: 100px;
-    
-}
-
-#yo p{
     font-size: 14px;
     line-height: 20px;
+    color: beige;
+}
+
+#yo h2{
+    font-family: Halant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem !important;
+    line-height: 85px;
+    color: beige;
 }
 
 
@@ -348,30 +350,21 @@ footer{
 
 /*RESPONSIVE*/
 
-/*PIEZA*/
+/*SOLO PARA PANTALLA XS*/
+@media only screen and (max-width: 576px) {
 
-@media (max-width: 940px) {
-    .piezas {
-      flex-direction: column;
-      margin-top: 60px;
+    /*NOSOTROS*/
+    #nosotros p{
+        text-align: center;
     }
-   
-    .c-izq,
-    .c-der {
-      width: 100%;
+
+    #nosotros h2{
+        font-size: 36px !important;
+        text-align: center;
     }
-   
-    .c-izq img {
-      width: 300px;
-      right: 0;
-      top: -65px;
-      left: initial;
+
+    .saturacion:hover{
+        filter: grayscale(0%);
+        transition-duration: 1s;
     }
-  }
-   
-  @media (max-width: 535px) {
-    .c-izq img {
-      width: 220px;
-      top: -85px;
-    }
-  }
+}
