@@ -34,54 +34,17 @@ h1{
 
 /*HEADER*/
 
+/*HEADER*/
+
 header{
-    width: 100%;
-    height: 90px;
-    background-color: #FFF8EF;
-    box-shadow: #393636;
+    font-family: 'Allerta', sans-serif;
+
 }
 
-header nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.bg-beige {
+    background-color: #FFF8EF !important;
 }
 
-header nav a{
-    font-family: 'Lato', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: bold;
-    color: #383838;
-    font-size: 24px;
-    line-height: 25px;
-    padding-left: 35px;
-}
-
-header nav ul li{
-    float: left;
-    list-style-type: none;
-    margin: 20px;
-}
-
-header nav ul:last-child{
-    margin: 20px 50px;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color: #383838;
-    font-size: 0.875em;
-    line-height: 17px;
-}
-
-header nav ul li a:hover{
-    color: #be8f5a;
-}
 
 
 
