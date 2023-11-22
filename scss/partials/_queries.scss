@@ -1,0 +1,21 @@
+/*RESPONSIVE*/
+
+/*SOLO PARA PANTALLA XS*/
+
+@media only screen and (max-width: 576px) {
+
+    /*NOSOTROS*/
+    #nosotros p{
+        text-align: center;
+    }
+
+    #nosotros h2{
+        font-size: 36px !important;
+        text-align: center;
+    }
+
+    .saturacion:hover{
+        filter: grayscale(0%);
+        transition-duration: 1s;
+    }
+}
