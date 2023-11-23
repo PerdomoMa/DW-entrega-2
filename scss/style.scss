@@ -1,7 +1,7 @@
 @import "./partials/variables";
-@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Halant&display=swap');
 @import "./partials/condicionales";
-@import './partials/bucles';
+@import "./partials/bucles";
+@import "./partials/fonts";
 
 /*GENERALES*/
 
@@ -10,7 +10,7 @@ body {
     margin: 0;
 	padding: 0;
     height: 100%;
-    width: 100%;
+    width: $ancho;
     background-color: #FFF8EF !important;
 }
 
@@ -35,11 +35,11 @@ header{
 /*PRINCIPAL*/
 
 #principal video{
-    width: 100%;
+    width: $ancho;
     height: 800px !important; 
     object-fit: fill ;
     z-index: -100;
-}
+} 
 
 /*TEXTO*/
 
@@ -50,8 +50,13 @@ header{
     color: $color-beige;
     text-align: center;
     background-color: $color-naranja;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    height: 400px;
+
+     p{
+        display: inline-block;
+        padding-top: 140px;
+        width: $ancho/2;
+     }
 }
 
 /*TRABAJOS*/
@@ -77,7 +82,7 @@ span {
     height: auto;
   }
 
-  /*NOSOTROS*/
+  /*PRINCIPAL NOSOTROS*/
 
 #yo{
     background-color: #838175;
@@ -88,7 +93,8 @@ span {
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
-        color: beige;
+        color: $color-beige;
+        margin-left: 40px;
     }
 
     h2{
@@ -98,6 +104,7 @@ span {
         font-size: 4.5rem !important;
         line-height: 85px;
         color: $color-beige;
+        margin-left: 40px;
     }
 }
 
@@ -105,7 +112,7 @@ span {
 /*CONTACTO*/
 
 #contacto{
-    width: 40%;
+    width: $ancho/2;
     text-align: center;
     margin: 90px auto;
 
@@ -115,6 +122,8 @@ span {
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
+        display: inline-block;
+        width: 80%;
     }
 
     form{
@@ -133,7 +142,7 @@ form input, form textarea{
     border: 1px solid $color-gris;
     box-sizing: border-box;
     border-radius: 23px;
-    width: 100%;
+    width: $ancho;
     margin: 5px;
 }
 
@@ -162,6 +171,22 @@ button{
         border-color: transparent;
         text-align: center;
     }
+
+    .card{
+        transition: all .5s;
+
+        a{
+            outline: none;
+      padding: 2px 1px 0;
+      color: #bbbbbb;
+        }
+    }
+
+    .card:hover{
+        cursor: pointer;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+        transform: scale(1.02);
+    }
 }
 
 
@@ -170,8 +195,8 @@ button{
 .piezas{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
     display: flex;
+    padding-top: 100px;
 }
 
 .c-izq {
@@ -195,6 +220,12 @@ button{
 .c-der {
     width: 35%;
     margin-top: 60px;
+
+    a{
+        outline: none;
+  padding: 2px 1px 0;
+  color: #bbbbbb;
+    }
 }
 
 .descripcion{
@@ -223,6 +254,8 @@ button{
 }
 
 .color-choose { 
+    padding: 20px 0;
+
     div {
     display: inline-block;
     }
@@ -257,13 +290,18 @@ button{
 
 }
 
+/*NOSOTROS*/
+
+#nosotros{
+    margin-top: 60px;
+}
 
 
 /*FOOTER*/
 
 footer{
-    width: 100%;
-    height: 80px;
+    width: $ancho;
+    height: 70px;
     text-align: center;
     background-color: #FFF8EF;
 }

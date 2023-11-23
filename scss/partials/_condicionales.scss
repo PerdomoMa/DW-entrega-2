@@ -1,0 +1,26 @@
+$descuentos: "";
+
+/*condicionales*/
+
+@if ($descuentos == "cyber-monday"){
+    #texto1{
+        background-image: url("../img/descuentos.png");
+        background-size: contain;
+        
+        p {
+            color: transparent;
+        }
+    }
+}
+
+@else if ($descuentos == "febrero"){
+    #texto1{
+        background-image: url("");
+    }
+}
+
+@else{
+    #texto1{
+        background-image: none;
+    }
+}
