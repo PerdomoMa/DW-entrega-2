@@ -5,7 +5,6 @@
 
 /*GENERALES*/
 
-
 body {
     margin: 0;
 	padding: 0;
@@ -304,6 +303,29 @@ footer{
     height: 70px;
     text-align: center;
     background-color: #FFF8EF;
+}
+
+/*ERROR 404*/
+
+#error{
+    font-family: Allerta, sans-serif;
+    text-align: center;
+    width: $ancho;
+    background-color: #FFF8EF;
+
+    h1 {
+        color: rgb(182, 24, 24);
+    }
+
+    p {
+        font-size: 18px;
+        color: $color-gris;
+    }
+
+    a {
+        color: $color-naranja;
+        text-decoration: none;
+    }
 }
 
 
