@@ -307,27 +307,6 @@ footer{
 
 /*ERROR 404*/
 
-#error{
-    font-family: Allerta, sans-serif;
-    text-align: center;
-    width: $ancho;
-    background-color: #FFF8EF;
-}
 
-#erroe h1 {
-        color: rgb(182, 24, 24) !important;
-    }
-
-#error p {
-        font-size: 18px;
-        color: $color-gris;
-    }
-
-#error a {
-        color: $color-naranja;
-        text-decoration: none;
-     }
-
-     
 
 @import "./partials/queries";
