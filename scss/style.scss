@@ -312,21 +312,22 @@ footer{
     text-align: center;
     width: $ancho;
     background-color: #FFF8EF;
+}
 
-    h1 {
-        color: rgb(182, 24, 24);
+#erroe h1 {
+        color: rgb(182, 24, 24) !important;
     }
 
-    p {
+#error p {
         font-size: 18px;
         color: $color-gris;
     }
 
-    a {
+#error a {
         color: $color-naranja;
         text-decoration: none;
-    }
-}
+     }
 
+     
 
 @import "./partials/queries";
